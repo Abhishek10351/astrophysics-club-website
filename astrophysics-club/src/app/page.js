@@ -1,5 +1,7 @@
-export default function Home() {
+import Home from "../../sites/Home";
+
+export default function HomePage() {
     return(
-      <h1>Welcome</h1>
+      <Home />
     );
 }
