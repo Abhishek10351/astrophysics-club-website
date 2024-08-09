@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="navigation">
             <picture className="nav-logo">
                 <img
-                    src=""
+                    src="/assets/club-logo.png"
                     alt="Astrophysics Club Logo"
                 />
             </picture>

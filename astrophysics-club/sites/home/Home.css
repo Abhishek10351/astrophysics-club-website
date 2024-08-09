@@ -1,0 +1,14 @@
+:root {
+    --bg-image: "https://images.unsplash.com/photo-1465788786008-f75a725b34e9";
+}
+
+main .home {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1465788786008-f75a725b34e9");
+    background: lightgray #0b0d17;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* lightgray 50% / cover no-repeat, var(--color-blue-900, #0B0D17) */
