@@ -1,9 +1,9 @@
 import "./welcome.css";
-import Cards from "../cards/Card";
+
 export default function Welcome() {
     return (
         <>
-            <section className="welcome">
+            <div className="welcome">
                 <h1 className="about-h1">About Us</h1>
                 <p className="about-p">
                     Are you a stargazer? Join The Astrophysics Club! We're a
@@ -12,10 +12,7 @@ export default function Welcome() {
                     discuss it all. Come share your passion and expand your
                     knowledge with us!
                 </p>
-            </section>
-            <h1 className="vision-h1">Our Vision</h1>
-
-            <Cards />
+            </div>
         </>
     );
 }

@@ -1,14 +1,9 @@
 .welcome {
-    background: radial-gradient(circle, #931597, #4d3661);
-
-    width: auto;
-    height: max-content;
-    margin: 3rem 9rem;
-    padding: 0rem 2rem;
-    border: 1px solid black;
-    border-radius: 5rem;
+    background: none;
 }
-.welcome h1 {
+
+.about-h1 {
+    background: none;
     font-size: 4rem;
     font-weight: 700;
     color: #d3d0d0;
@@ -17,7 +12,8 @@
     text-align: center;
 }
 
-.welcome p {
+.about-p {
+    background: radial-gradient(circle, #931597d0, #4d3661c0);
     font-family: "Inter", sans-serif;
     text-align: center;
     font-size: 1.4rem;
@@ -26,24 +22,7 @@
     /* margin: 4rem 10rem; */
     margin-bottom: 20px;
 }
-.vision h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #333;
-    margin-top: 12rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
-.vision-ul {
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    font-size: 1.4rem;
-    color: #080808;
-    line-height: 1.8;
-    margin: 4rem 10rem;
-    margin-bottom: 20px;
-}
 /* Media query for screens with a max width of 1024px (tablets) */
 @media screen and (max-width: 1024px) {
     .welcome h1 {
