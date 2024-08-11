@@ -1,0 +1,9 @@
+main.home {
+    min-height: 100vh;
+    background-color: #0b0d17;
+    background-image: url("../../public/assets/bg/space.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-blend-mode: lighten;
+}

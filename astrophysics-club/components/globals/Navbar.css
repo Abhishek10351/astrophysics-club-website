@@ -4,8 +4,8 @@
     --spacing500: 0px 0px 0px;
     --nav-logo-width: 100px;
     --spacing-800: 64px;
-    --spacing-600: 48px;
 }
+
 .navigation {
     display: flex;
     padding: 0;
@@ -13,6 +13,25 @@
     align-items: center;
     gap: -32px;
     align-self: stretch;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        padding-top: 24px;
+        gap: -32px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navigation {
+        padding-top: 24px 0px;
+        gap: -32px;
+        display: flex;
+        width: 375px;
+        height: 880px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .nav-logo {
     display: flex;
@@ -22,41 +41,72 @@
     flex: 1 0 0;
 }
 .nav-logo img {
-    width: 48px;
-    height: var(--spacing-600, 48px);
+    width: 64px;
+    aspect-ratio: 1/1;
+}
+.nav-content {
+    display: flex;
+    /* flex: 1 0 0; */
+    padding: 0px 20px;
+    justify-content: flex-end;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(400px);
 }
 .nav-links {
     display: flex;
     min-width: 664px;
-    padding: 0px var(--spacing-800, 64px);
-    justify-content: flex-end;
+    max-width: max-content;
+    padding: 0px 50px;
+    justify-content: space-around;
+    align-self: flex-end;
     align-items: center;
-    gap: var(--spacing-600, 48px);
-    flex: 1 0 0;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(40px);
+    gap: 60px;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        min-width: 488px;
+        padding: 0px var(--spacing-500, 40px);
+        align-items: center;
+        gap: var(--spacing-600, 48px);
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav-links {
+        min-width: none;
+        width: 80vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 32px;
+        align-self: stretch;
+    }
 }
 .nav-link {
     display: flex;
     height: 96px;
     border-bottom: 3px solid #ffffff00;
-
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: var(--spacing-100, 8px);
+    gap: 8px;
     transition: border-bottom 0.3s ease-in;
 }
 .nav-link:hover {
-    border-bottom: 3px solid var(--color-white, #fff);
+    border-bottom: 3px solid #fff;
+}
+@media screen and (max-width: 576px) {
+    .nav-link {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
 }
 .nav-link a {
-    color: var(--color-white, #fff);
-
-    /* desktop/text-preset-8 */
+    color: #fff;
     font-family: "Barlow Condensed";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
