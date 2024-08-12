@@ -1,0 +1,12 @@
+:root {
+    /* colours for a space theme */
+    --text-color-1: #d5def7;
+    --text-color-2: #e7eaf5
+    --background-color: #060b1f;
+    --primary-color: #879be9;
+    --secondary-color: #3d1885;
+    --accent-color: #a64edf;
+
+    /* fonts */
+    --font-family: "Inter", "Roboto", sans-serif;
+}

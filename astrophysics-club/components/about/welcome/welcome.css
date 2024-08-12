@@ -26,29 +26,29 @@
 /* Media query for screens with a max width of 1024px (tablets) */
 @media screen and (max-width: 1024px) {
     .welcome h1 {
-        font-size: 3.3rem; /* Adjust font size for tablets */
-        margin-top: 13rem; /* Adjust top margin for tablets */
-        margin-bottom: 18px; /* Adjust bottom margin for tablets */
+        font-size: 3.3rem;
+        margin-top: 13rem;
+        margin-bottom: 18px;
     }
 
     .welcome p {
-        font-size: 1.3rem; /* Adjust font size for tablets */
-        margin: 3rem 5rem; /* Adjust margins for tablets */
-        line-height: 1.6; /* Adjust line height for tablets */
+        font-size: 1.3rem;
+        margin: 3rem 5rem;
+        line-height: 1.6;
         text-align: justify;
     }
 }
 @media screen and (max-width: 480px) {
     .welcome h1 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
-        margin-top: 6rem; /* Adjust top margin */
-        margin-bottom: 15px; /* Adjust bottom margin */
+        font-size: 2.5rem;
+        margin-top: 6rem;
+        margin-bottom: 15px;
     }
 
     .welcome p {
-        font-size: 1.1rem; /* Adjust font size for smaller screens */
-        margin: 2rem 2rem; /* Adjust margins for better fit */
-        line-height: 1.5; /* Adjust line height */
+        font-size: 1.1rem;
+        margin: 2rem 2rem;
+        line-height: 1.5;
         text-align: justify;
     }
 }
