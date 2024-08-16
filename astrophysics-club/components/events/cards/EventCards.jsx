@@ -1,4 +1,4 @@
-import './EventCards.css';
+import "./EventCards.css";
 
 export default function EventCards() {
     return (
