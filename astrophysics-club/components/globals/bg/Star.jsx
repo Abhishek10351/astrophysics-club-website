@@ -2,7 +2,7 @@ import "./Star.sass";
 
 export default function Star() {
     return (
-        <div className="container">
+        <div className="star-container">
             <div className="sky">
                 <div className="stars"></div>
                 <div className="stars1"></div>
