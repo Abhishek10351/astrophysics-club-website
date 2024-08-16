@@ -1,17 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .top-packages-section {
     padding: 40px 20px;
-    background-color: #31b3a8de;
+    /* background-color: #062c2ade; */
+    background: repeating-radial-gradient(circle, #628306f5, #220122e7 75%);
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .top-packages-section h2 {
     /* margin-bottom: 10px; */
+    font-family: "Bungee Tint", sans-serif;
+    /* font-family: "Matemasie", sans-serif; */
+    font-weight: 300;
+    font-style: normal;
     margin-top: 4rem;
-    font-size: 3.6rem;
-    color: #333;
+    font-size: 3.7rem;
+    background: repeating-radial-gradient(circle, #435fff, #d600d6 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .packages-container {
@@ -23,7 +30,7 @@
     padding: 3rem 5rem;
     width: 100%;
     height: auto;
-    background-color: rgba(255, 192, 203, 0.336);
+    /* background-color: rgba(95, 65, 70, 0.336); */
 }
 
 .package-card {
@@ -54,6 +61,7 @@
     font-style: normal;
     font-size: 1.2rem;
     margin: 5px;
+    color: azure;
 }
 
 .package-card p {
@@ -62,6 +70,7 @@
     font-style: normal;
     font-size: 1rem;
     margin: 10px;
+    color: azure;
 }
 
 @media screen and (max-width: 480px) {
