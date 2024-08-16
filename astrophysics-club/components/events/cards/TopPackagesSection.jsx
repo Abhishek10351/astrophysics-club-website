@@ -35,7 +35,7 @@ const topPackages = [
     image: "Space-O-Talk.png",
   },
   {
-    title: "Space-Science-Day",
+    title: "Space Science Day",
     description: "Lorem",
     image: "Space-Science-Day.jpg",
   },
