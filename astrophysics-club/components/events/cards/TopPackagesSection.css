@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.top-packages-section {
+    padding: 40px 20px;
+    /* background-color: #062c2ade; */
+    background: repeating-radial-gradient(circle, #628306f5, #220122e7 75%);
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.top-packages-section h2 {
+    /* margin-bottom: 10px; */
+    font-family: "Bungee Tint", sans-serif;
+    /* font-family: "Matemasie", sans-serif; */
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 4rem;
+    font-size: 3.7rem;
+    background: repeating-radial-gradient(circle, #435fff, #d600d6 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding: 3rem 5rem;
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(95, 65, 70, 0.336); */
+}
+
+.package-card {
+    border-radius: 12px;
+    overflow: hidden;
+    /* height: auto; */
+    /* width: 300px; */
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+}
+
+/* .package-image {
+    width: auto;
+    height: 480px;
+    object-fit: cover;
+} */
+
+.package-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 5px;
+    color: azure;
+}
+
+.package-card p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 10px;
+    color: azure;
+}
+
+@media screen and (max-width: 480px) {
+    .package-card p {
+        font-size: 0.8rem;
+    }
+}
