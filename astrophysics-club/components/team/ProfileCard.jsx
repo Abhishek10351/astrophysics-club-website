@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG, faLinkedinIn } from '@fortawesome/react-fontawesome';
 import {Image} from "next/image";
 
-function TeamMember({props}) {
+function TeamMember({...props}) {
     return (
         <div className="our-team">
             <div className="picture">
@@ -52,13 +52,7 @@ function ProfileCard() {
             {TeamData.map((member, index) => (
                 <TeamMember
                     key={index}
-                    name={member.name}
-                    title={member.title}
-                    image={member.image}
-                    facebook={member.facebook}
-                    twitter={member.twitter}
-                    googlePlus={member.googlePlus}
-                    linkedin={member.linkedin}
+                    {member}
                 />
             ))}
         </div>
