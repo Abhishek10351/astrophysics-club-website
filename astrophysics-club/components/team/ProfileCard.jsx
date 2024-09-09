@@ -2,16 +2,18 @@ import './ProfileCard.css';
 import TeamData from "../../public/data/TeamData.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG, faLinkedinIn } from '@fortawesome/react-fontawesome';
-
+import {Image} from "mext/image";
 
 function TeamMember(props) {
     return (
         <div className="our-team">
             <div className="picture">
-                <img
+                <Image
                     className="img-fluid"
                     src={props.image}
                     alt={props.name}
+                    height="100"
+                    width="100"
                 />
             </div>
             <div className="team-content">
