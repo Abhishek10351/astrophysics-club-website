@@ -47,7 +47,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "astrophysics-club/${{steps.detect-package-manager.outputs.manager}}/package-lock.json"
+          cache: "astrophysics-club/package-lock.json"
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
