@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG, faLinkedinIn } from '@fortawesome/react-fontawesome';
 import {Image} from "next/image";
 
-function TeamMember(props) {
+function TeamMember({props}) {
     return (
         <div className="our-team">
             <div className="picture">
