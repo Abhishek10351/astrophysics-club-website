@@ -67,7 +67,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('/astrophysics-club/package-lock.json') }}-
       - name: Install dependencies
-        run: "astrophysics-club/ ${{ steps.detect-package-manager.outputs.command }}"
+        run: "cd astrophysics-club ; ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}"
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
