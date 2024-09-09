@@ -52,7 +52,7 @@ function ProfileCard() {
             {TeamData.map((member, index) => (
                 <TeamMember
                     key={index}
-                    {member}
+                    {...member}
                 />
             ))}
         </div>
