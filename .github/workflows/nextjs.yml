@@ -62,10 +62,10 @@ jobs:
           path: |
             /astrophyics-club/.next/cache
           # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/astrophysics-club/package-lock.json') }}-${{ hashFiles('**/astrophysics-club.[jt]s', '**/astrophysics-club.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('/astrophysics-club/package-lock.json') }}-${{ hashFiles('**/astrophysics-club.[jt]s', '**/astrophysics-club.[jt]sx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/astrophysics-club/package-lock.json') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('/astrophysics-club/package-lock.json') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
