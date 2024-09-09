@@ -2,7 +2,7 @@ import './ProfileCard.css';
 import TeamData from "../../public/data/TeamData.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faGooglePlusG, faLinkedinIn } from '@fortawesome/react-fontawesome';
-import {Image} from "mext/image";
+import {Image} from "next/image";
 
 function TeamMember(props) {
     return (
