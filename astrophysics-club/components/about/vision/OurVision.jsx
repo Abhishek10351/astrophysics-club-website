@@ -9,7 +9,7 @@ export default function OurVision() {
                     <ul>
                         <li>
                             Cultivate a Passion for Astronomy: Ignite and
-                            nurture students' curiosity about the cosmos through
+                            nurture students&apos; curiosity about the cosmos through
                             engaging activities, workshops, and observational
                             experiences.
                         </li>
